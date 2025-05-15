@@ -4,5 +4,8 @@
     ~/.profile: profile
     ~/.bashrc: bashrc
     ~/.bash_logout: bash_logout
+    ~/.config/nvim: nvim
 
-
+- shell:
+  - ["git submodule update --init --recursive", "Installing submodules"]
+  - ["mkdir -p ~/.config", "Creating config folder"]
