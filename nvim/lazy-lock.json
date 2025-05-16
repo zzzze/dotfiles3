@@ -1,4 +1,5 @@
 {
+  "coc-tsserver": { "branch": "master", "commit": "37da6984eefebb95a8a54718380e50d9f882195e" },
   "coc.nvim": { "branch": "release", "commit": "d4e9104473b17a0230555f029760c3717ba769de" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
   "neo-tree.nvim": { "branch": "v3.x", "commit": "f481de16a0eb59c985abac8985e3f2e2f75b4875" },
