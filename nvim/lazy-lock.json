@@ -1,6 +1,6 @@
 {
   "coc-tsserver": { "branch": "master", "commit": "37da6984eefebb95a8a54718380e50d9f882195e" },
-  "coc.nvim": { "branch": "release", "commit": "d4e9104473b17a0230555f029760c3717ba769de" },
+  "coc.nvim": { "branch": "release", "commit": "5ef1bb5d626fbebf8dec03443cf260412eb6a899" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
   "neo-tree.nvim": { "branch": "v3.x", "commit": "f481de16a0eb59c985abac8985e3f2e2f75b4875" },
   "nui.nvim": { "branch": "main", "commit": "f535005e6ad1016383f24e39559833759453564e" },
@@ -10,5 +10,8 @@
   "tcomment_vim": { "branch": "master", "commit": "48ab639a461d9b8344f7fee06cb69b4374863b13" },
   "telescope-coc.nvim": { "branch": "master", "commit": "b305a2c4f5de45f93b94e1a72078edd6d62e8cc1" },
   "telescope.nvim": { "branch": "0.1.x", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },
+  "vim-airline": { "branch": "master", "commit": "41c5f54507fd865c8c00fe1f4bb390a59b6894ef" },
+  "vim-airline-themes": { "branch": "master", "commit": "cda3b5ea087f7e301a3d4e61727108f66ba6dd20" },
+  "vim-code-dark": { "branch": "master", "commit": "4624dc223bf574aa9a731c2383c579847303c380" },
   "which-key.nvim": { "branch": "main", "commit": "370ec46f710e058c9c1646273e6b225acf47cbed" }
 }

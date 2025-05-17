@@ -10,6 +10,7 @@ return {
   lazy = false, -- neo-tree will lazily load itself
   keys = {
     { "<leader>ft", "<cmd>Neotree toggle<cr>", desc = "NeoTree" },
+    { "<leader>nf", "<cmd>Neotree reveal<cr>", desc = "NeoTree" },
   },
   ---@module "neo-tree"
   ---@type neotree.Config?

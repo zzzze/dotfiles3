@@ -14,6 +14,7 @@ return {
       { "gr", ":Telescope coc references<CR>", "n", desc="References" },
     },
     config = function()
+      -- Use K to show documentation in preview window
       local function show_documentation()
         local filetype = vim.bo.filetype
         if filetype == 'vim' or filetype == 'help' then
@@ -22,11 +23,31 @@ return {
           vim.fn.CocAction('doHover')
         end
       end
-
       vim.api.nvim_set_keymap('n', 'K', '', {
         noremap = true,
         silent = true,
         callback = show_documentation
+      })
+
+      -- Remap for rename current word
+      vim.keymap.set("n", "<leader>rn", "<Plug>(coc-rename)", { desc = "Rename symbol (Coc)" })
+
+      -- Use `[g` and `]g` to navigate diagnostics
+      vim.keymap.set("n", "[g", "<Plug>(coc-diagnostic-prev)", {
+        silent = true,
+        desc = "Go to previous diagnostic",
+      })
+      vim.keymap.set("n", "]g", "<Plug>(coc-diagnostic-next)", {
+        silent = true,
+        desc = "Go to next diagnostic",
+      })
+
+      -- Highlight symbol under cursor on CursorHold
+      vim.api.nvim_create_autocmd("CursorHold", {
+        pattern = "*",
+        callback = function()
+          vim.fn.CocActionAsync("highlight")
+        end,
       })
 
       -- Use <CR> to confirm completion

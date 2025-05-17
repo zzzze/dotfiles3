@@ -14,6 +14,7 @@ vim.opt.cmdheight = 1
 vim.opt.updatetime = 300
 vim.opt.fillchars = "vert: "
 vim.opt.fcs = "eob: "
+vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#333333" })
 
 -- coding
 vim.o.syntax = "on"
