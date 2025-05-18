@@ -1,0 +1,11 @@
+name: project
+root: ~/<%= @settings["workspace"] %>
+windows:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - nvim
+        - terminal_1:
+        - terminal_2:
+        - terminal_3:
+

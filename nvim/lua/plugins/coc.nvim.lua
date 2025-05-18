@@ -63,4 +63,5 @@ return {
     end,
   },
   { "neoclide/coc-tsserver", build = "yarn install --frozen-lockfile" },
+  { "neoclide/coc-pairs", build = "yarn install --frozen-lockfile" },
 }
