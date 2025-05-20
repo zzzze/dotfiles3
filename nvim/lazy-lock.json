@@ -1,5 +1,8 @@
 {
+  "coc-css": { "branch": "master", "commit": "1103be62ac20bf211e689b941a7eae166187f82c" },
   "coc-pairs": { "branch": "master", "commit": "08135a6c6a20a653e1bbaafe3f335fb3619d610b" },
+  "coc-rust-analyzer": { "branch": "master", "commit": "22c9997a5255e87972edf6b6727b7efb5eb1a25b" },
+  "coc-sumneko-lua": { "branch": "main", "commit": "961a07dedf718366a7a84db1a68ca2d70c9c0433" },
   "coc-tsserver": { "branch": "master", "commit": "37da6984eefebb95a8a54718380e50d9f882195e" },
   "coc.nvim": { "branch": "release", "commit": "5ef1bb5d626fbebf8dec03443cf260412eb6a899" },
   "codeium.vim": { "branch": "main", "commit": "272c6e2755e8faa90e26bcdcd9fde6b9e61751ea" },
@@ -16,6 +19,6 @@
   "vim-airline": { "branch": "master", "commit": "41c5f54507fd865c8c00fe1f4bb390a59b6894ef" },
   "vim-airline-themes": { "branch": "master", "commit": "cda3b5ea087f7e301a3d4e61727108f66ba6dd20" },
   "vim-code-dark": { "branch": "master", "commit": "4624dc223bf574aa9a731c2383c579847303c380" },
-  "vim-tmux-navigator": { "branch": "master", "commit": "33afa80db65113561dc53fa732b7f5e53d5ecfd0" },
+  "vim-tmux-navigator": { "branch": "master", "commit": "64803fdd19a36211eba5e39f86c4cbceae8e1d06" },
   "which-key.nvim": { "branch": "main", "commit": "370ec46f710e058c9c1646273e6b225acf47cbed" }
 }

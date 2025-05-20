@@ -128,4 +128,6 @@ export TERM=xterm-256color
 export EDITOR=nvim
 alias fd=fdfind
 
-export PATH=$PATH:~/.local/share/gem/ruby/3.2.0/bin:~/.local/bin
+export PATH=$PATH:~/.local/share/gem/ruby/3.2.0/bin:~/.local/bin:~/.cargo/bin
+. "$HOME/.cargo/env"
+export PATH=$PATH:~/bin
