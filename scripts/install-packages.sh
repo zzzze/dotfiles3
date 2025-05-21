@@ -2,6 +2,11 @@
 
 set -e
 
+if [[ "$(uname)" == "Darwin" ]]; then
+  echo "MacOS is not supported"
+  exit 0
+fi
+
 # pnpm
 curl -fsSL https://get.pnpm.io/install.sh | sh -
 pnpm env use --global lts
