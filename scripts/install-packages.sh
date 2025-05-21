@@ -13,8 +13,14 @@ sudo apt install -y \
   neovim \
   fd-find \ # for nvim-telescope
   ripgrep \ # for nvim-telescope
+  lua5.1 \
+  luarocks \ # for lazy.nvim
 cat >> $HOME/.bashrc <<EOF
-export TERM=xterm-256color
+if [ -n "\$TMUX" ]; then
+  export TERM=screen-256color
+else
+  export TERM=xterm-256color
+fi
 export EDITOR=nvim
 alias vim=nvim
 alias vi=nvim
