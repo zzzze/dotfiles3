@@ -29,7 +29,6 @@ vim.opt.laststatus = 3
 vim.opt.expandtab = true
 
 -- others
-vim.opt.mouse = a
 vim.opt.selection = "inclusive"
 vim.opt.selectmode:append("mouse,key")
 vim.opt.matchtime = 5
