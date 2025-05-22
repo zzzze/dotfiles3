@@ -1,1 +1,4 @@
-{}
+{
+  "Lua.diagnostics.globals": ["vim"],
+  "sumneko-lua.enableNvimLuaDev": true
+}
