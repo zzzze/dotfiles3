@@ -64,7 +64,8 @@ return {
   },
   { "neoclide/coc-tsserver", build = "yarn install --frozen-lockfile" },
   { "neoclide/coc-pairs", build = "yarn install --frozen-lockfile" },
-  { "fannheyward/coc-rust-analyzer", build = "yarn install --frozen-lockfile" },
+  { "neoclide/coc-emmet", build = "yarn install --frozen-lockfile" },
   { "neoclide/coc-css", build = "yarn install --frozen-lockfile" },
+  { "fannheyward/coc-rust-analyzer", build = "yarn install --frozen-lockfile" },
   { "xiyaowong/coc-sumneko-lua", build = "yarn install --frozen-lockfile" },
 }

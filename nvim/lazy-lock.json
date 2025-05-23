@@ -1,5 +1,7 @@
 {
+  "auto-session": { "branch": "main", "commit": "00334ee24b9a05001ad50221c8daffbeedaa0842" },
   "coc-css": { "branch": "master", "commit": "1103be62ac20bf211e689b941a7eae166187f82c" },
+  "coc-emmet": { "branch": "master", "commit": "ab04e2a2baad75af64781e5ca07722eceb352f8f" },
   "coc-pairs": { "branch": "master", "commit": "08135a6c6a20a653e1bbaafe3f335fb3619d610b" },
   "coc-rust-analyzer": { "branch": "master", "commit": "1020de5f2ff4166fc8d0f83d8d3fad7dda9439d7" },
   "coc-sumneko-lua": { "branch": "main", "commit": "961a07dedf718366a7a84db1a68ca2d70c9c0433" },

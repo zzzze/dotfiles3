@@ -42,3 +42,27 @@ vim.opt.wildignore:append("*/tmp/*,*.so,*.swp,*.zip,*.png,*.jpg,*.jpeg,*.gif,*/n
 vim.opt.foldmethod = "marker"
 vim.opt.foldmarker = "#region,#endregion"
 vim.opt.compatible = false
+
+
+-- autocmd BufNewFile,BufRead *.ts set filetype=typescript
+-- autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
+-- autocmd BufNewFile,BufRead *.jsx set filetype=javascript.jsx
+
+-- vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
+--   pattern = "*.ts",
+--   callback = function()
+--     vim.bo.filetype = 'typescript'
+--   end
+-- })
+-- vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
+--   pattern = "*.tsx",
+--   callback = function()
+--     vim.bo.filetype = 'typescript.tsx'
+--   end
+-- })
+-- vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
+--   pattern = "*.jsx",
+--   callback = function()
+--     vim.bo.filetype = 'javascript.jsx'
+--   end
+-- })
