@@ -4,7 +4,11 @@ return {
     "vim-airline/vim-airline",
     config = function()
       -- theme
-      vim.g.airline_theme='solarized'
+      -- vim.g.airline_theme='solarized'
+      -- vim.g.airline_powerline_fonts = 1
+      -- vim.g.airline_solarized_bg='light'
+
+      vim.g.airline_theme='deus'
       vim.g.airline_powerline_fonts = 1
       vim.g.airline_solarized_bg='light'
 

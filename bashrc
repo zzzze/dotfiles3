@@ -135,3 +135,11 @@ alias fd=fdfind
 export PATH=$PATH:~/.local/share/gem/ruby/3.2.0/bin:~/.local/bin:~/.cargo/bin
 . "$HOME/.cargo/env"
 export PATH=$PATH:~/bin
+
+export ANTHROPIC_AUTH_TOKEN=cr_83d00ba8ecb26f38ddfcb82e446ace8cf7c3e585d91cb360a7651906113fe164
+export ANTHROPIC_BASE_URL=https://as.imds.ai/api
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

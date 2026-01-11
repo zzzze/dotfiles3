@@ -1,1 +1,1 @@
-vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#dddddd" })
+vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#555555" })
