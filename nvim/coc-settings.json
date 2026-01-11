@@ -1,4 +1,5 @@
 {
+  "rust-analyzer.enable": false,
   "Lua.diagnostics.globals": ["vim"],
   "sumneko-lua.enableNvimLuaDev": true
 }

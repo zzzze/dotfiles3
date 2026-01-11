@@ -2,13 +2,11 @@ return {
   { "vim-airline/vim-airline-themes" },
   {
     "vim-airline/vim-airline",
-    dependencies = {
-      "tomasiser/vim-code-dark",
-    },
     config = function()
       -- theme
-      vim.g.airline_theme='codedark'
+      vim.g.airline_theme='solarized'
       vim.g.airline_powerline_fonts = 1
+      vim.g.airline_solarized_bg='light'
 
       vim.g['airline#extensions#whitespace#mixed_indent_algo'] = 1
 
