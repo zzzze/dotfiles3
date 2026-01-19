@@ -10,14 +10,11 @@
     stdout: true
 
 - link:
-    ~/.profile: profile
-    ~/.bashrc: bashrc
-    ~/.bash_logout: bash_logout
-    ~/.config/nvim: nvim
+    # ~/.config/nvim: nvim
     ~/.config/ghostty/config: ghostty/config
     ~/.tmux.conf: tmux.conf
-    ~/.tmuxinator: tmuxinator
-    ~/.cargo/config.toml: cargo-config.toml
-    ~/.gitignore: gitignore
-    ~/.gitconfig: gitconfig
-    ~/.tigrc: tigrc
+    # ~/.tmuxinator: tmuxinator
+    # ~/.cargo/config.toml: cargo-config.toml
+    # ~/.gitignore: gitignore
+    # ~/.gitconfig: gitconfig
+    # ~/.tigrc: tigrc

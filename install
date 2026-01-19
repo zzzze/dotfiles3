@@ -2,11 +2,6 @@
 
 set -e
 
-if [[ "$(uname)" == "Darwin" ]]; then
-  echo "MacOS is not supported"
-  exit 0
-fi
-
 CONFIG="install.conf.yaml"
 DOTBOT_DIR="dotbot"
 
@@ -16,5 +11,39 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
+
+# 根据平台选择配置
+PLATFORM="$(uname)"
+if [[ "$PLATFORM" == "Darwin" ]]; then
+  echo "Detected macOS"
+  if [[ -f "${BASEDIR}/install.macos.yaml" ]]; then
+    CONFIG="install.macos.yaml"
+  fi
+elif [[ "$PLATFORM" == "Linux" ]]; then
+  echo "Detected Linux"
+  # 进一步区分 Linux 发行版
+  if [[ -f /etc/arch-release ]]; then
+    echo "Detected Arch Linux"
+    if [[ -f "${BASEDIR}/install.arch.yaml" ]]; then
+      CONFIG="install.arch.yaml"
+    fi
+  elif [[ -f /etc/debian_version ]]; then
+    echo "Detected Debian/Ubuntu"
+    if [[ -f "${BASEDIR}/install.debian.yaml" ]]; then
+      CONFIG="install.debian.yaml"
+    fi
+  elif [[ -f /etc/fedora-release ]]; then
+    echo "Detected Fedora"
+    if [[ -f "${BASEDIR}/install.fedora.yaml" ]]; then
+      CONFIG="install.fedora.yaml"
+    fi
+  fi
+  # 如果没有特定发行版配置，使用通用 Linux 配置
+  if [[ "$CONFIG" == "install.conf.yaml" ]] && [[ -f "${BASEDIR}/install.linux.yaml" ]]; then
+    CONFIG="install.linux.yaml"
+  fi
+fi
+
+echo "Using config: $CONFIG"
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
