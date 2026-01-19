@@ -25,6 +25,8 @@
 
 [delta]
   features = decorations
+  theme = Github
+  light = true
 
 [delta "interactive"]
   keep-plus-minus-markers = false
@@ -37,3 +39,6 @@
   hunk-header-file-style = red
   hunk-header-line-number-style = "#067a00"
   hunk-header-style = file line-number syntax
+
+[credential]
+	helper = store --file ~/.git-credentials

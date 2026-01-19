@@ -4,7 +4,8 @@ adjust-cell-height = 35%
 resize-overlay = always
 keybind = global:cmd+l=toggle_quick_terminal
 quick-terminal-position = top
-theme = Rose Pine Dawn
+# theme = Rose Pine Dawn
+theme = Atom One Dark
 keybind = shift+enter=text:\x1b\r
 desktop-notifications = true
 bell-features = attention,title,audio
