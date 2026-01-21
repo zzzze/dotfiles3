@@ -10,6 +10,7 @@
     stdout: true
 
 - link:
+    ~/is_vim.sh: is_vim.sh
     ~/.profile: profile
     ~/.bashrc: bashrc
     ~/.bash_logout: bash_logout
