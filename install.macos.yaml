@@ -10,11 +10,19 @@
     stdout: true
 
 - link:
-    ~/is_vim.sh: is_vim.sh
+    ~/is_vim.sh:
+      force: true
+      path: is_vim.sh
     # ~/.config/nvim: nvim
-    ~/.config/ghostty/config: ghostty/config
-    ~/.tmux.conf: tmux.conf
-    # ~/.tmuxinator: tmuxinator
+    ~/.config/ghostty/config:
+      force: true
+      path: ghostty/config
+    ~/.tmux.conf:
+      force: true
+      path: tmux.conf
+    ~/.tmuxinator:
+      force: true
+      path: tmuxinator
     # ~/.cargo/config.toml: cargo-config.toml
     # ~/.gitignore: gitignore
     # ~/.gitconfig: gitconfig
