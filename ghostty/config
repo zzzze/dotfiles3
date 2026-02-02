@@ -8,4 +8,3 @@ quick-terminal-position = top
 theme = Atom One Dark
 keybind = shift+enter=text:\x1b\r
 desktop-notifications = true
-bell-features = attention,title,audio
