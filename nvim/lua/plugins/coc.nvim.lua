@@ -68,4 +68,5 @@ return {
   { "neoclide/coc-css", build = "yarn install --frozen-lockfile" },
   { "fannheyward/coc-rust-analyzer", build = "yarn install --frozen-lockfile" },
   { "xiyaowong/coc-sumneko-lua", build = "yarn install --frozen-lockfile" },
+  { "fannheyward/coc-biome", build = "yarn install --frozen-lockfile" },
 }
