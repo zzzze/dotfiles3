@@ -18,6 +18,18 @@ return {
     telescope.load_extension('coc')
     telescope.setup{
       defaults = {
+        vimgrep_arguments = {
+          "rg",
+          "--color=never",
+          "--no-heading",
+          "--with-filename",
+          "--line-number",
+          "--column",
+          "--smart-case",
+          "--hidden",
+          "--glob",
+          "!.git/*",
+        },
         mappings = {
           n = {
             ["<C-x>"] = action_layout.toggle_preview,
@@ -37,6 +49,19 @@ return {
               require("telescope.state").get_status(bufnr).picker.layout_config.scroll_speed = 1
               return require("telescope.actions").preview_scrolling_up(bufnr)
             end
+          },
+        },
+      },
+      pickers = {
+        find_files = {
+          hidden = true,
+          find_command = {
+            "fd",
+            "--type",
+            "f",
+            "--hidden",
+            "--exclude",
+            ".git",
           },
         },
       },
